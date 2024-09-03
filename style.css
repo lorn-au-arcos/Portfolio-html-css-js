@@ -6,12 +6,18 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+    to top,
+    #fff1eb 0%,
+    #ace0f9 100%
+  );
 }
 
 html {
-  scroll-behavior: "smooth";
+  scroll-behavior: smooth;
 }
 
 p {
@@ -56,6 +62,38 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  /* margin-left: -10%; */
+  padding-right: 30%;
+  
+}
+
+.logo:hover {
+  font-weight: bold; /* Makes the text bold on hover */
+  background: linear-gradient(
+    90deg,
+    #9168c0,
+    #5684d1,
+    #1ba1e3,
+    #9e72ba,
+    #d65c67,
+    #d6635c
+  ); /* Gradient animation colors */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 3s ease infinite; /* Applies the gradient animation */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .logo:hover {
@@ -190,6 +228,23 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+}
+
+.gradient-text {
+  font-size: 3rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Optional: Makes the text bolder */
+  background: linear-gradient(
+    90deg,
+    #9168c0,
+    #5684d1,
+    #1ba1e3,
+    #9e72ba,
+    #d65c67,
+    #d6635c
+  );
+  -webkit-background-clip: text; /* Ensures the gradient is clipped to the text */
+  background-clip: text; /* Standard syntax */
+  color: transparent; /* Hides the original text color */
 }
 
 #social-container {
